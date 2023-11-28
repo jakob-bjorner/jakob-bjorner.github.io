@@ -15,14 +15,13 @@
         <script src="index.js"></script>
         <link rel="icon" href="assets/gt-webdev-logo.png">
         <!-- Replace this with your name! -->
-        <title>Jakob's Portfolio</title>
+        <title>Jakob's site</title>
     </head>
     <body>
         <div id="root" class="bg-light">
             <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" onclick="scrollToElement()" data-target="root">
-                        <img  src="assets/transparent_GTWD.png" alt="GT WebDev Logo" height="24" width="40" class="d-inline-block align-text-bottom"></img>
                         Jakob Bjorner
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,124 +34,101 @@
                                     About
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a onclick="scrollToElement()" class="nav-link" data-target="experience">
                                     Experience
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a onclick="scrollToElement()" class="nav-link" data-target="projects">
                                     Projects
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a onclick="scrollToElement()" class="nav-link" data-target="awards">
                                     Awards
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
             </nav>
             <div id="home">
-                <div>
+                <div class="home-container">
                     <!-- Replace this with your name! -->
-                    <h1 class="title">GEORGIA TECH WEB DEVELOPERS</h1>
+                    <div class="image-container">
+                        <div class="image-profile" alt="photo of Jakob sitting next to Lahari, but Lahari is cropped out"></div>
+                    </div>
+                    <div>
+                        <h1 class="title">Jakob Bjorner</h1>
+                        <p>Pursuing research in Natural Language Processing. Interests in eutreprenureship, biking, and of course, hiking.</p>
+                        <p>Email: <span class="email">firstname underscore lastname at gatech.edu</span></p>
+
+                    </div>
                 </div>
             </div>
             <div id="about">
                 <!-- All about you! (Replace this with "About Me" or "Bio" or anything similar) -->
                 <h2>About Me</h2>
                 <p>
-                    I am a Georgia Tech Web Developer.
+                    My current research interests involve ways for making startups easier by allowing for more adaptable and reliable foundation models. Really, I'm working towards unemployment by way of advanced language modeling.
                 </p>
                 <!-- Just some more sample content -->
-                <h3>Our Team of Officers</h3>
+                <h4>Those who I have worked closely with</h4>
                 <ul>
                     <li>
-                        Steven Buckley: Co-President
+                        <a href="https://www.linkedin.com/in/ksinha24/">Kunal Sinha</a>: In Cledge (2022 September - present) we worked together on the machine learning team making products for students to more easily write essays and assemble applications.
                     </li>
                     <li>
-                        Talia Tian: Co-President
+                        <a href="https://www.linkedin.com/in/anirudhbanerjee/">Rudy Banerjee</a>: With Capsisco health (2021 Summer) we interned virtually, spending work hours in the garage and going up to play video games when the work was done :).
                     </li>
                     <li>
-                        Deepak Ramalingam: Vice-President
+                        <a href="https://gstoica27.github.io/">George Stoica</a>: During my first research project (2022 September - 2023 September) "<a href="https://arxiv.org/abs/2305.03053">ZipIt! Merging Models from Different Tasks without Training</a>" he mentored me in research and allowed me to explore complexities of how representations change different architectures.
                     </li>
                     <li>
-                        Jinwoo Park: Director of Sponsorships and Outreach
-                    </li>
-                    <li>
-                        Vignesh Sreedhar: Project Manager
-                    </li>
-                    <li>
-                        Jakob Bjorner: Project Manager
-                    </li>
-                    <li>
-                        Jacob Amin: Project Manager
-                    </li>
-                    <li>
-                        Sanjit Pingili: Website Administrator
-                    </li>
-                    <li>
-                        Sharon Kim: Director of Social Media
-                    </li>
-                    <li>
-                        Varun Patel: Treasurer
+                        <a href="https://kartikgo.github.io/">Kartik Goyal</a>: He has been mentoring me for my most recent project, where I wanted initially to compare the quality of reinforcement learning techniques on Diffusion LMs as compared to existing RLHF techniques, but which has now shifted to improving Diffusion Language models.
                     </li>
                 </ul>
             </div>
-            <div id="experience">
-                <!-- Talk about your experiences. You could list them if you wanted to. -->
+            <!-- <div id="experience">
                 <h2>My Experience</h2>
                 <p>
                     While as a whole, we haven't had any work experience, but our officers have interned at companies like Amazon and TikTok! Some of our past officers have taken up jobs at companies like Slack and Cypress! Others are even cofounders of their own startup!
                 </p>
-                <div id="logo-panel">
-                    <img src="assets/slack_logo.png">
-                    <img src="assets/amazon_logo.PNG">
-                    <img src="assets/808_logo.png">
-                    <img src="assets/tik-tok_logo.png">
-                </div>
-            </div>
-            <div id="projects">
-                <!-- Highlight any projects you would like others to see here! -->
-                <h2>Our Projects</h2>
+                
+            </div> -->
+
+            <!-- <div id="projects">
+                Highlight any projects you would like others to see here!
+                <h2>My Projects</h2>
                 <p>
-                    A new pivot away from our old model of weekly tutorials was the inclusion of project teams. Officers would propose different ideas that would then be selected from to become the semester's hands-on element. These projects are designed such that anyone can join, though they have varying skill levels. Last semester, we had apps such as a protest information website, crypto currency dashboards, and even a Youtube to Spotify playlist converter!
+                    In reverse
                 </p>
-                <h3>Spring 2022</h3>
+                <h4>Fall 2023</h4>
                 <p>
-                    As of the start of the current semester, we have a new host of interesting projects for our members to take up! These are, as follows:
+                    Fun with NLP:
                 </p>
                 <ul>
-                    <li>A COVID-19 Dashboard</li>
-                    <li>A live video chatting app</li>
-                    <li>An essay writing dashboard powered by GPT-3</li>
-                    <li>A continuation of the Youtube-Spotify playlist application</li>
-                    <li>A continutation of the protest information site</li>
-                    <li>Web-based board games</li>
-                    <li>A video game clip sharing site</li>
+                    <li>An essay <a href="https://college-essay-assistant-frontend.vercel.app/">writing assistant</a> powered by ChatGPT</li>
+                    <li>diffusion Language models with </li>
                 </ul>
-            </div>
-            <div id="awards">
-                <!-- Got something you want to show off? Do it here! -->
+
+            </div> -->
+            <!-- <div id="awards">
                 <h2>Awards and Achievements</h2>
                 <p>
                     While our members and officers have, sadly, as an organization, we have nothing to share.
                 </p>
-            </div>
+            </div> -->
             <div id="footer" class="bg-dark">
                 <!-- Contact Info and other last notes -->
-                <h6>Contact Us!</h6>
+                <h6>Contact Me!</h6>
                 <div class="contact">
-                    <a href="https://discord.gg/BbykvvQmGz">
-                        <i class="bi bi-discord"></i>
+                    <a>
+                        <i class="bi bi-envelope-fill" onclick="scrollToElement()" data-target="root"></i>
                     </a>
-                    <a href="mailto:gtwebdevclub@gmail.com">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                    <a href="https://www.facebook.com/GtWebdev/">
-                        <i class="bi bi-facebook"></i>
+                    <a href="https://www.linkedin.com/in/jakob-bjorner/">
+                        <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
                 <div class="copyright"></div>

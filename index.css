@@ -7,60 +7,77 @@ html, body {
 }
 
 #home {
-    height: 800px;
+    /* height: 400px; */
     width: 100%;
 }
 
+#home .home-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .image-container {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .image-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    border: 5px solid #ddd;
+    background-image: url("assets/profile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #about {
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     padding: 5%;
 }
 
 #experience {
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     padding: 5%;
 }
 
 #projects {
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     padding: 5%;
 }
 
 #awards {
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     padding: 5%;
 }
 
-#logo-panel {
-    justify-items: center;
-    height: 400px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+
 
 #footer {
     width: 100%;
     height: 80px;
 }
 
-#logo-panel > img {
-    max-width: 80%;
-    max-height: 80%
-}
+
 
 nav a:hover {
     cursor: pointer;
 }
 
 .title {
-    margin-left: 10%;
-    position: absolute;
-    top: 50%;
+    /* margin-left: 10%; */
+    /* position: absolute; */
+    /* top: 50%; */
     transform: translateY(-50%);
     font-style: italic;
     font-weight: bold;

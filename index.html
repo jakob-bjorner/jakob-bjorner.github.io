@@ -61,7 +61,7 @@
                     </div>
                     <div>
                         <h1 class="title">Jakob Bjorner</h1>
-                        <p>Pursuing research in Natural Language Processing. Interests in eutreprenureship, biking, and of course, hiking.</p>
+                        <p>Pursuing research in Natural Language Processing and Reinforcement Learning. Interests in eutreprenureship, biking, and of course, hiking.</p>
                         <p>Email: <span class="email">firstname underscore lastname at gatech.edu</span></p>
 
                     </div>
@@ -76,17 +76,23 @@
                 <!-- Just some more sample content -->
                 <h4>Those who I have worked closely with</h4>
                 <ul>
+                    <li><a href="https://www.alanesuhr.com/">Aly Lidayan</a> and <a href="https://www.alanesuhr.com/">Alane Suhr</a>: We worked on <a href="https://openreview.net/forum?id=lMjxyHLL2R">ABBEL</a> together, which is a project focused on the data efficient training of long context agents, which compress their own context during policy rollouts.</li>
                     <li>
-                        <a href="https://www.linkedin.com/in/ksinha24/">Kunal Sinha</a>: In <a href="https://cledge.org/welcome">Cledge</a> (2021 September - present) we worked together on the machine learning team making products for students to more easily write essays and assemble applications. Here is the <a href="https://college-essay-assistant-frontend.vercel.app/">essay assistant</a> prototype we are currently working on!
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/anirudhbanerjee/">Rudy Banerjee</a>: With Capsisco health (2021 Summer) we interned virtually, spending work hours in the garage and going up to play video games when the work was done :).
+                        <a href="https://kartikgo.github.io/">Kartik Goyal</a>: He has been my mentor as I explored Natural Language Processing and alternative forms of text generation, and alignment to human values. 
+                        <ul>
+                            <li>We looked into diffusion language models for non autoregressive text refinement. Continuous diffusion language models haven't seen the emirical success of discrete diffusion language models, and ultimately there remain limitations, some of which we outlined in <a href="https://hdl.handle.net/1853/78153">my undergraduate thesis</a></li>
+                            <li>For some time, we also looked at greek to english alignment, and in so doing, I <a href="https://github.com/jakob-bjorner/greek/blob/main/scratch/development.ipynb">reimplemented</a> IBM translation models 1 - 3. This project wasn't self motivated, and I personally struggled to see the application domains, but if you take a look into the repository, you will find the significant methodological experiements we tried. The technial aspects were very interesting to explore! </li>
+                            <li><a href="https://arxiv.org/abs/2403.09629">Quiet-STaR</a>, was an <a href="https://github.com/srush/awesome-o1">exciting</a> early reasoning work, yet we eventually found with our <a href="https://github.com/jakob-bjorner/quiet-star-replicate">Quiet-STaR replication study</a> that their main results were largely a result of an improper application of <a href="https://github.com/ezelikman/quiet-star/blob/892446b15cc08889a9ef725383f4a99f47586680/modeling_mistral.py#L1972">temperature</a> during only the policy gradient calculation but not during sampling, causing an increase in logit magnitudes, which although hurting loss, improves performance on their eval sets. From this project, I still have insights into discrete vs continuous representations for learning that I would like to explore, like the priors and differentiability and how the representations may be able to complement one another in other domains.</li>
+                        </ul>
                     </li>
                     <li>
                         <a href="https://gstoica27.github.io/">George Stoica</a>: During my first research project (2022 September - 2023 September) "<a href="https://arxiv.org/abs/2305.03053">ZipIt! Merging Models from Different Tasks without Training</a>" he mentored me in research and allowed me to explore complexities of how representations change through different architectures.
                     </li>
                     <li>
-                        <a href="https://kartikgo.github.io/">Kartik Goyal</a>: He has been mentoring me for my most recent project. The initial goal was to compare the quality of reinforcement learning techniques on Diffusion Language Models as compared to existing RLHF techniques, but which has now shifted to improving Diffusion Language models to provide for more fair comparison with the tunability of autoregressive models.
+                        <a href="https://www.linkedin.com/in/ksinha24/">Kunal Sinha</a>: In <a href="https://www.linkedin.com/company/cledge/about/">Cledge</a> (2021 September - 2024 July) we worked together on the machine learning team making products for students to more easily write essays and assemble applications. Here is the <a href="https://college-essay-assistant-frontend.vercel.app/">essay assistant</a> prototype we worked on!
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/anirudhbanerjee/">Rudy Banerjee</a>: With Capsisco health (2021 Summer) we interned virtually, spending work hours in the garage and going up to play video games when the work was done :).
                     </li>
                 </ul>
             </div>

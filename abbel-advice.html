@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Mobile responsive view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- All of Bootstrap 5.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Our CSS -->        
+        <link rel="stylesheet" href="index.css"/>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <!-- Our JS and logo -->
+        <script src="index.js"></script>
+        <link rel="icon" href="assets/gt-webdev-logo.png">
+        <title>Jakob's site</title>
+    </head>
+    <body>
+        <div style="margin: 2%;">
+
+            <h2>Advice informed from <a href="https://arxiv.org/abs/2512.20111">ABBEL</a></h2>
+            <p>
+                There is this sense that you want to build from what works, so an immediate inference is to use and build off of verl. Although this is well reasoned, the flaw comes in the fact that verl doesn't just work, and many pushes to verl from open source contributors make glaring errors which you begin to pick up on when you step through the code on your own. 
+            </p>
+            <p>
+                There are errors which have been popularly cited like those mentioning the complete mis-handling of off policy rollouts, the issue termed "token rerendering" whereby a model is made to do RL on tokens the original policy generated with a different tokenization, and presumably many <a href="https://agarwl.github.io/images/research/iclr_spot_talk_v2.pdf">others</a> some of which related to the suboptimal handling of the inference engine's low precision mismatching with the training forward backward pass.
+            </p>
+            <p>
+                Now perhaps newer frameworks address these issues, such as <a href="https://github.com/PrimeIntellect-ai/prime-rl">prime RL</a>, or <a href="https://github.com/THUDM/slime">SLIME</a>, but my recommendation is to use whatever framework you choose as point of reference for developing your own implementation. Specifically develop your own code for training, and leverage their code as a known performance level your own should reach in terms of speed and training efficiency.
+            </p>
+            <p>
+                Larger models may be faster for experiments, or just make your ideas actually work. We found that with qwen 2.5 3b models there were things that these models just fell apart on, where larger models like qwen 2.5 7b would optimize on just fine. With only a handful of A100s available for optimization, this meant experiments would take a day, but they would work instead of just not working with instability and lackluster convergence. In conversations with others, they found a similar phenomena saying, they only got signal on their method after moving to a qwen3-8b long reasoning model over a qwen3-4b model.
+            </p>
+            <p>
+                Task interference for small models can distract from the findings of your method. We found that separating out the policy of belief generation and action generation resulted in a much better performing and more stable to train policies, although for time reasons this is not what we used for the policies trained in our paper.
+            </p>
+            <p>
+                vLLM vs SGLang: Early in experiments we found SGLang to be less stable for no apparent reason. Depending on verl, which at the time had a specific agent section that depended directly on SGLang, we only found this after moving frameworks days before a workshop submission. This was a very irritating instability to run into, and further informs my recommendation to depend on frameworks mostly as a point of reference for performance, as in the process of debugging another person's framework, you must understand how every small decision could be causing your issue. Creating the framework yourself makes the debugging process less frustrating.
+            </p>
+        </div>
+
+    </body>
+</html>
